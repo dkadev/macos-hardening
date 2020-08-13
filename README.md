@@ -16,7 +16,7 @@
 /System/Library/Sandbox/com.apple.xpc.launchd.rootless.plist
 
 ## Some webs to research about services
-https://web.archive.org/web/20170509011754/http://triviaware.com:80/macprocess/all
+https://web.archive.org/web/20170509011754/http://triviaware.com:80/macprocess/all  
 https://www.heise.de/mac-and-i/artikel/Die-Systemprozesse-von-macOS-Sierra-3715619.html?seite=all
 
 ## macOS-home-call-drop

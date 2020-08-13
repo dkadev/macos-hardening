@@ -1,0 +1,22 @@
+PID	Status	Label
+864	0	com.apple.SafariBookmarksSyncAgent  -> Sincroniza marcadores de Safari
+833	0	com.apple.photolibraryd  -> El demonio de la biblioteca de fotos de iCloud es un proceso del sistema y sincroniza sus fotos y videos entre sus Mac y dispositivos iOS.
+706	0	com.apple.keyboardservicesd  -> El demonio KeyboardServices se dirige a la base de datos local para el reemplazo de texto y se conecta a configuration.apple.com.
+705	0	com.apple.applespell  -> Servicio de corrección ortográfica de MacOS disponible en aplicaciones Cocoa como Mail. La función está influenciada por la configuración del sistema en el panel "Teclado / Texto".
+406	0	com.apple.AddressBook.ContactsAccountsService  -> Relacionado con la agenda de contactos
+4881	0	com.apple.Safari.SafeBrowsing.Service  -> Navegación segura en safari
+830	0	com.apple.CloudPhotosConfiguration  -> Relacionado con  iPhotos y iCloud
+345	0	com.apple.siri.context.service  -> Relacionado con Siri
+434	0	com.apple.telephonyutilities.callservicesd  -> "Call Service Daemon" es un proceso del sistema y se comunica con el iPhone mientras se realiza una llamada telefónica en la computadora.
+379	0	com.apple.rapportd
+3330	0	com.apple.speech.speechsynthesisd
+371	0	com.apple.sharingd
+430	0	com.apple.familycircled
+843	0	com.apple.photoanalysisd
+435	0	com.apple.suggestd
+612	0	com.apple.assistantd
+825	0	com.apple.studentd
+443	0	com.apple.Maps.mapspushd
+1359	0	com.apple.podcasts.PodcastContentService
+372	0	com.apple.AirPlayUIAgent
+401	0	com.apple.geod
