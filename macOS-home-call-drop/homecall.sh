@@ -206,8 +206,32 @@ audit_launchctl(){
     done
   done
 
+  echo "Searching for ROOT LaunchAgents:"
+  sudo launchctl list | while read -r line
+  do
+    for agent in "${AGENTS[@]}"
+    do
+      case "$line" in
+        *"$agent") echo "Found LaunchAgent $line"
+          ;;
+      esac
+    done
+  done
+
   echo "Searching for LaunchDaemons:"
   launchctl list | while read -r line
+  do
+    for daemon in "${DAEMONS[@]}"
+    do
+      case "$line" in
+        *"$daemon") echo "Found LaunchDaemon $line"
+          ;;
+      esac
+    done
+  done
+
+  echo "Searching for ROOT LaunchDaemons:"
+  sudo launchctl list | while read -r line
   do
     for daemon in "${DAEMONS[@]}"
     do
