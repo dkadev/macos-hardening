@@ -1,15 +1,20 @@
 # MACOS HARDENING
-## Get active services:
+
+Compilation of tools for macOS hardening as well as some useful commands to monitor and do research agents and daemons of services running on the machine.
+
+## Useful commands
+
+### Get active services:
      launchctl list | grep -v "\-\t0"
-## Find a service:
+### Find a service:
      grep -lR [service] /System/Library/Launch* /Library/Launch* ~/Library/LaunchAgents
 
-## Unload Daemons 
+### Unload Daemons 
      sudo launchctl unload -w /System/Library/LaunchDaemons/
-## Unload Agents
+### Unload Agents
      launchctl unload -w /System/Library/LaunchAgents/
 
-## More services info:
+### More services info:
      defaults read /System/Library/LaunchAgents/com.apple.
 
 ## SANDBOX plist to prevent re-loading: 
@@ -19,10 +24,16 @@
 https://web.archive.org/web/20170509011754/http://triviaware.com:80/macprocess/all  
 https://www.heise.de/mac-and-i/artikel/Die-Systemprozesse-von-macOS-Sierra-3715619.html?seite=all
 
+## Disable services
+
+    bash disable.sh
+
+Just mv .plist files to .plistbak (RENAMING)
+
 ## macOS-home-call-drop
 
-Simple shell script to fix macOS privacy issues and remove mostly useless macOS calls to Cupertino.
-Edit **config.sh** to choose which services you want to disable. Most of them are described, uncomment to let script disable it.
+Simple shell script to fix macOS privacy issues and remove mostly useless macOS calls to Cupertino.  
+Edit **config.sh** to choose which services you want to disable. Most of them are described, uncomment to let script disable it.  
 
 ### Usage
 MacOS High Sierra and up, requires that SIP is disabled.
@@ -39,10 +50,10 @@ MacOS High Sierra and up, requires that SIP is disabled.
 
 ## osx-config-check
 
-Checks your OSX machine against various hardened configuration settings.
+Checks your OSX machine against various hardened configuration settings.  
 
-You can specify your own preferred configuration baseline by supplying your own [Hjson](https://hjson.org/) file instead of the provided one.
-Configurations come from sites like: [drduh's OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
+You can specify your own preferred configuration baseline by supplying your own [Hjson](https://hjson.org/) file instead of the provided one.  
+Configurations come from sites like: [drduh's OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)  
 
 ### Usage
 
