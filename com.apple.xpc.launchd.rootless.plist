@@ -132,6 +132,8 @@
         <true/>
 		<key>com.apple.CrashReporterSupportHelper</key>
         <true/>
+		<key>com.apple.CloudPhotosConfiguration</key>
+        <true/>
         <key>org.cups.cupsd</key>
         <true/>
         <key>com.apple.corespeechd</key>
@@ -143,6 +145,8 @@
 		<key>com.apple.findmymacmessenger</key> 
         <true/>
         <key>com.apple.GameController.gamecontrollerd</key>
+        <true/>
+        <key>com.apple.geod</key>
         <true/>
 		<key>com.apple.icloud.findmydeviced</key>
         <true/>
@@ -173,6 +177,10 @@
         <key>com.apple.speech.speechsynthesisd</key>
         <true/>
         <key>com.apple.studentd</key>
+        <true/>
+        <key>com.apple.macos.studentd</key>
+        <true/>
+        <key>com.apple.sharingd</key>
         <true/>
 
 
@@ -229,15 +237,13 @@
         <true/>
         <key>com.apple.SafariNotificationAgent</key>
         <true/>
-        <key>com.apple.sharingd</key>
-        <true/>
-        <key>com.apple.telephonyutilities.callservicesd</key>
-        <true/>
         <key>com.apple.soagent</key>
         <true/>
         <key>com.apple.SafariHistoryServiceAgent</key>
         <true/>
         <key>com.apple.SafariBookmarksSyncAgent</key>
+        <true/>
+        <key>com.apple.telephonyutilities.callservicesd</key>
         <true/>
 	</dict>
 </dict>
