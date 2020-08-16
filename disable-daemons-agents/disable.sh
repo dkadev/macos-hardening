@@ -14,6 +14,9 @@
 # 'com.apple.bird' will prevent saving prompt from being shown
 TODISABLE=()
 
+
+
+
 # iCloud
 # TODISABLE+=('com.apple.security.cloudkeychainproxy3' \
 	# 'com.apple.iCloudUserNotifications' \
@@ -68,6 +71,10 @@ TODISABLE+=('com.apple.VoiceOver' \
 	# 'com.apple.accessibility.dfrhud' \
 	# 'com.apple.accessibility.heard')
 
+)
+
+
+
 # Quicklook
 # TODISABLE+=('com.apple.quicklook.ui.helper' \
 # 	'com.apple.quicklook.ThumbnailsAgent' \
@@ -100,21 +107,48 @@ TODISABLE+=('com.apple.telephonyutilities.callservicesd' \
 	'com.apple.findmymacmessenger' \
 	'com.apple.java.InstallOnDemand' \
 	'com.apple.KeyboardAccessAgent' \
-	'com.apple.keyboardservicesd')
+	'com.apple.keyboardservicesd'
 	'com.apple.mediaanalysisd' \
 	'com.apple.mediaremoteagent' \
 	'com.apple.macos.studentd' \
 	'com.apple.photoanalysisd' \
 	'com.apple.parentalcontrols.check' \
-	'com.apple.photolibraryd')
+	'com.apple.photolibraryd'
 	'com.apple.RemoteDesktop' \
-	'com.apple.remindd')
+	'com.apple.remindd'
 	'com.apple.suggestd' \
 	'com.apple.touristd' \
-
+)
 for agent in "${TODISABLE[@]}"
 do
-    mv ./System/Library/LaunchAgents/${agent}.plist ./System/Library/LaunchAgents/${agent}.plist.bak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    mv /Volumes/Macintosh\ HD/System/Library/LaunchAgents/${agent}.plist /Volumes/Macintosh\ HD/System/Library/LaunchAgents/${agent}.plist.bak
     echo "[OK] Agent ${agent} disabled"
 done
 

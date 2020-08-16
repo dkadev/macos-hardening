@@ -93,7 +93,7 @@ AGENTS+=('com.apple.SafariNotificationAgent') #Notifications in Safari
 # AGENTS+=('com.apple.security.cloudkeychainproxy3') #Probably related to syncing keychain to iCloud
 #AGENTS+=('com.apple.security.idskeychainsyncingproxy') #Most likely also related to keychain - IDSKeychainSyncingProxy.bundle
 #AGENTS+=('com.apple.security.keychain-circle-notification') #Related to keychain
-# AGENTS+=('com.apple.sharingd') #Airdrop, Remote Disks, Shared Directories, Handoff
+AGENTS+=('com.apple.sharingd') #Airdrop, Remote Disks, Shared Directories, Handoff
 # AGENTS+=('com.apple.syncdefaultsd') ##Probably related to syncing keychain
 AGENTS+=('com.apple.telephonyutilities.callservicesd') #Handling phone and Facetime calls
 
@@ -118,6 +118,7 @@ AGENTS+=('com.apple.icloud.findmydeviced') #
 AGENTS+=('com.apple.keyboardservicesd') #        
 AGENTS+=('com.apple.locationd') #        
 AGENTS+=('com.apple.Maps.mapspushd') #
+AGENTS+=('ccom.apple.Maps.pushdaemon') #
 AGENTS+=('com.apple.netbiosd') #        
 AGENTS+=('com.apple.passd') #Relacionado con Apple Pay
 AGENTS+=('com.apple.photolibraryd') #Sincroniza fotos con iCloud
@@ -126,6 +127,7 @@ AGENTS+=('com.apple.remotepairtool') #
 AGENTS+=('com.apple.rpmuxd') #        
 # AGENTS+=('com.apple.speech.speechsynthesisd') #Dictado y Siri
 AGENTS+=('com.apple.studentd') #Classroomkit
+AGENTS+=('com.apple.macos.studentd') #Classroomkit
 AGENTS+=('com.apple.SubmitDiagInfo') #        
 #AGENTS+=('') #
 
