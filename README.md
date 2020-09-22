@@ -1,6 +1,7 @@
 # MACOS HARDENING
 
-Compilation of tools for macOS hardening as well as some useful commands to monitor and do research agents and daemons of services running on the machine.
+Compilation of tools for macOS hardening as well as some useful commands to monitor and do research agents and daemons of services running on the machine. 
+(ALTHOUGH IS A PUBLIC REPO ITS BEEN CREATED FOR PERSONAL USE, SO IF YOU WANT TO TRY THIS I'M NOT RESPONSIBLE FOR USE AND CONSEQUENCES)
 
 ## Useful commands
 
